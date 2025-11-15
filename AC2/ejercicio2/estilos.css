@@ -1,0 +1,144 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #15165f;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.contenedor-header {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #00aaff;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.seccion-inicio {
+  text-align: center;
+  background-color: #00aaff1a;
+}
+
+.seccion-inicio h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.seccion-proyectos .galeria-proyectos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.proyecto {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.proyecto img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.seccion-habilidades table {
+  width: 60%;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.seccion-habilidades th, td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+}
+
+.seccion-habilidades i {
+  font-size: 1.5rem;
+  color: #00aaff;
+}
+
+.formulario-contacto {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formulario-contacto button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #00aaff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario-contacto button:hover {
+  background-color: #0088cc;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer a {
+  color: #00aaff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
