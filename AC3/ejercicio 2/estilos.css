@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background-color: #0a2e0a;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.start-screen {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: white;
+  align-self: flex-start; 
+}
+
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; 
+  max-width: 860px;
+}
+
+.tile {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.tile.small {
+  width: 100px;
+  height: 100px;
+}
+
+.tile.large {
+  width: 210px;
+  height: 100px;
+}
+
+.tile.wide {
+  width: 210px;
+  height: 100px;
+}
+
+.tile.image {
+  background-color: #0078d7; 
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tulip_flower.jpg/320px-Tulip_flower.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.blue { background-color: #0078d7; }
+.green { background-color: #107c10; }
+.orange { background-color: #e66100; }
+.purple { background-color: #68217a; }
+.red { background-color: #d13438; }
+.teal { background-color: #008272; }
+.magenta { background-color: #b4009e; }
