@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG vs Mapa de bits</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    svg {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+    }
+
+    img {
+      width: 200px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<h1>imagenes vectorials (SVG)</h1>
+
+<div class="container">
+  <!-- Casa -->
+  <svg viewBox="0 0 200 200">
+    <rect width="200" height="200" fill="skyblue"/>
+    <rect y="150" width="200" height="80" fill="lightgreen"/>
+    <polygon points="40,80 100,30 160,80" fill="peru"/>
+    <rect x="40" y="80" width="120" height="90" fill="lightsalmon"/>
+    <rect x="95" y="135" width="30" height="35" fill="saddlebrown"/>
+    <rect x="50" y="100" width="25" height="25" fill="white"/>
+    <rect x="125" y="100" width="25" height="25" fill="white"/>
+    <circle cx="30" cy="30" r="15" fill="yellow"/>
+    <circle cx="103" cy="153" r="3" fill="yellow"/>
+  </svg>
+
+  <!-- Coche -->
+  <svg viewBox="0 0 200 200">
+    <rect x="30" y="90" width="140" height="40" fill="red"/>
+    <rect x="60" y="60" width="80" height="40" fill="red"/>
+    <rect x="68" y="65" width="30" height="22" fill="skyblue"/>
+    <rect x="105" y="65" width="30" height="22" fill="skyblue"/>
+    <rect x="30" y="100" width="10" height="10" fill="yellow"/>
+    <rect x="160" y="100" width="10" height="10" fill="yellow"/>
+    <circle cx="60" cy="130" r="20" fill="black"/>
+    <circle cx="140" cy="130" r="20" fill="black"/>
+    <circle cx="60" cy="130" r="10" fill="grey"/>
+    <circle cx="140" cy="130" r="10" fill="grey"/>
+  </svg>
+
+  <!-- Robot -->
+  <svg viewBox="0 0 200 200">
+    <rect x="60" y="40" width="80" height="60" rx="10" fill="darkgray"/>
+    <circle cx="85" cy="65" r="10" fill="lime"/>
+    <circle cx="115" cy="65" r="10" fill="lime"/>
+    <circle cx="85" cy="65" r="6" fill="white"/>
+    <circle cx="115" cy="65" r="6" fill="white"/>
+    <rect x="70" y="110" width="60" height="70" fill="darkgray"/>
+    <rect x="35" y="120" width="35" height="10" fill="darkgray"/>
+    <rect x="35" y="120" width="35" height="10" fill="darkgray"/>
+    <rect x="130" y="120" width="35" height="10" fill="darkgray"/>
+    <rect x="97.5" y="10" width="5" height="30" fill="darkgray"/>
+    <circle cx="100" cy="15" r="5" fill="red"/>
+    <circle cx="100" cy="130" r="5" fill="red"/>
+    <circle cx="100" cy="150" r="5" fill="lime"/>
+    <circle cx="100" cy="170" r="5" fill="blue"/>
+
+</svg>
+</div>
+
+<h1>imagenes de mapa de bits</h1>
+
+<div class="container">
+  <img src="casa.png" alt="Casa mapa de bits">
+  <img src="coche.png" alt="Cotxe mapa de bits">
+  <img src="robot.png" alt="Robot mapa de bits">
+</div>
+
+<div style="text-align: left;">
+    <h1>Diferencias</h1>
+  <ul>
+    <li>Las imágenes de mapa de bits están formadas por píxeles y tienen una resolución fija.</li>
+    <li>Al ampliar una imagen de mapa de bits, pierde calidad y puede verse pixelada.</li>
+    <li>Las imágenes SVG son vectoriales y se generan mediante código (XML).</li>
+    <li>Los SVG se pueden ampliar o reducir sin perder calidad.</li>
+    <li>Las imágenes SVG suelen ocupar menos espacio cuando contienen gráficos simples.</li>
+    <li>Los SVG permiten modificar colores y formas directamente desde el código HTML o CSS.</li>
+    <li>Al convertir un SVG en una imagen de mapa de bits se pierde la ventaja de la escalabilidad.</li>
+    <li>Los SVG son ideales para iconos, logotipos y gráficos web.</li>
+    <li>Las imágenes de mapa de bits son más adecuadas para fotografías.</li>
+  </ul>
+</div>
+
+
+
+</body>
+</html>
