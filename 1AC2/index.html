@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reproductor de Audio HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>Reproductor Orbital – HTML5 Audio</h1>
+
+<div class="container">
+
+  <div class="player">
+    <h3>MP3 128 kbps</h3>
+    <audio id="audio1" src="audio/audio_mp3_128.mp3"></audio>
+    <input type="range" id="progress1" value="0" min="0" step="0.1">
+    <div class="controls">
+      <button onclick="playAudio('audio1')">Play</button>
+      <button onclick="pauseAudio('audio1')">Pause</button>
+      <button onclick="changeTime('audio1', -5)">-5s</button>
+      <button onclick="changeTime('audio1', 5)">+5s</button>
+      <button onclick="changeVolume('audio1', 0.1)">Vol +</button>
+      <button onclick="changeVolume('audio1', -0.1)">Vol -</button>
+      <button onclick="toggleMute('audio1', this)">🔊</button>
+    </div>
+  </div>
+
+  <div class="player">
+    <h3>MP3 320 kbps</h3>
+    <audio id="audio2" src="audio/audio_mp3_320.mp3"></audio>
+    <input type="range" id="progress2" value="0" min="0" step="0.1">
+    <div class="controls">
+      <button onclick="playAudio('audio2')">Play</button>
+      <button onclick="pauseAudio('audio2')">Pause</button>
+      <button onclick="changeTime('audio2', -5)">-5s</button>
+      <button onclick="changeTime('audio2', 5)">+5s</button>
+      <button onclick="changeVolume('audio2', 0.1)">Vol +</button>
+      <button onclick="changeVolume('audio2', -0.1)">Vol -</button>
+      <button onclick="toggleMute('audio2', this)">🔊</button>
+    </div>
+  </div>
+
+  <div class="player">
+    <h3>WAV</h3>
+    <audio id="audio3" src="audio/audio.wav"></audio>
+    <input type="range" id="progress3" value="0" min="0" step="0.1">
+    <div class="controls">
+      <button onclick="playAudio('audio3')">Play</button>
+      <button onclick="pauseAudio('audio3')">Pause</button>
+      <button onclick="changeTime('audio3', -5)">-5s</button>
+      <button onclick="changeTime('audio3', 5)">+5s</button>
+      <button onclick="changeVolume('audio3', 0.1)">Vol +</button>
+      <button onclick="changeVolume('audio3', -0.1)">Vol -</button>
+      <button onclick="toggleMute('audio3', this)">🔊</button>
+    </div>
+  </div>
+
+  <div class="player">
+    <h3>OGG</h3>
+    <audio id="audio4" src="audio/audio.ogg"></audio>
+    <input type="range" id="progress4" value="0" min="0" step="0.1">
+    <div class="controls">
+      <button onclick="playAudio('audio4')">Play</button>
+      <button onclick="pauseAudio('audio4')">Pause</button>
+      <button onclick="changeTime('audio4', -5)">-5s</button>
+      <button onclick="changeTime('audio4', 5)">+5s</button>
+      <button onclick="changeVolume('audio4', 0.1)">Vol +</button>
+      <button onclick="changeVolume('audio4', -0.1)">Vol -</button>
+      <button onclick="toggleMute('audio4', this)">🔊</button>
+    </div>
+  </div>
+
+  <div class="player">
+    <h3>WavPack (WV)</h3>
+    <audio id="audio5" src="audio/audio.wv"></audio>
+    <input type="range" id="progress5" value="0" min="0" step="0.1">
+    <div class="controls">
+      <button onclick="playAudio('audio5')">Play</button>
+      <button onclick="pauseAudio('audio5')">Pause</button>
+      <button onclick="changeTime('audio5', -5)">-5s</button>
+      <button onclick="changeTime('audio5', 5)">+5s</button>
+      <button onclick="changeVolume('audio5', 0.1)">Vol +</button>
+      <button onclick="changeVolume('audio5', -0.1)">Vol -</button>
+      <button onclick="toggleMute('audio5', this)">🔊</button>
+    </div>
+  </div>
+
+  <div class="player">
+    <h3>FLAC</h3>
+    <audio id="audio6" src="audio/audio.flac"></audio>
+    <input type="range" id="progress6" value="0" min="0" step="0.1">
+    <div class="controls">
+      <button onclick="playAudio('audio6')">Play</button>
+      <button onclick="pauseAudio('audio6')">Pause</button>
+      <button onclick="changeTime('audio6', -5)">-5s</button>
+      <button onclick="changeTime('audio6', 5)">+5s</button>
+      <button onclick="changeVolume('audio6', 0.1)">Vol +</button>
+      <button onclick="changeVolume('audio6', -0.1)">Vol -</button>
+      <button onclick="toggleMute('audio6', this)">🔊</button>
+    </div>
+  </div>
+
+</div>
+
+<h2>Comparativa de formatos</h2>
+<table>
+  <tr>
+    <th>Formato</th>
+    <th>Compresión</th>
+    <th>Calidad</th>
+    <th>Tamaño</th>
+    <th>Uso recomendado</th>
+  </tr>
+  <tr><td>MP3 128</td><td>Con pérdida</td><td>Media</td><td>Pequeño</td><td>Web / Streaming</td></tr>
+  <tr><td>MP3 320</td><td>Con pérdida</td><td>Alta</td><td>Media</td><td>Música</td></tr>
+  <tr><td>WAV</td><td>Sin compresión</td><td>Muy alta</td><td>Grande</td><td>Edición</td></tr>
+  <tr><td>OGG</td><td>Con pérdida</td><td>Alta</td><td>Media</td><td>Software libre</td></tr>
+  <tr><td>WV</td><td>Sin pérdida</td><td>Muy alta</td><td>Media/Grande</td><td>Archivo profesional</td></tr>
+  <tr><td>FLAC</td><td>Sin pérdida</td><td>Muy alta</td><td>Grande</td><td>Archivo maestro</td></tr>
+</table>
+
+<script src="js/player.js"></script>
+</body>
+</html>
